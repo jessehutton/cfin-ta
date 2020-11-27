@@ -46,9 +46,8 @@ table th {
     <div id="transactions">
         <h3>Starting Balance: ${{startingBalance}}</h3>
         <h3>Ending Balance: ${{endingBalance}}</h3>
-        <h4>Account Number: {{$store.state.Statement.Transactions[0].AccountNumber}}</h4>
         <table>
-            <caption></caption>
+            <caption>Account Number: {{$store.state.Statement.Transactions[0].AccountNumber}}</caption>
             <thead>
                 <tr>
                     <th scope="col">Status</th>
