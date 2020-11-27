@@ -36,4 +36,4 @@ The data provided could've used some context so I had to make some assumptions b
 - negative account balance warnings (css cues)
 - responsive design
 
-These are just to name a few things off the top of my head but 
+These are just to name a few things off the top of my head but in the interest of time and readability of the source, these items seemed less important
