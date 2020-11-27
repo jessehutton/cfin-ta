@@ -19,7 +19,8 @@ The data provided could've used some context so I had to make some assumptions b
 ### Ending Balance: $258.18
 #### Account Number: 123456789
 
-| STATUS | DATE | AMOUNT | VENDOR | DESCRIPTION | TYPE |
-| Completed | 08/28/2020 06:43:12 am | $8.08 | Quickly Gas Stop | Other: POS Transaction | Debit |
-| Pending | 08/28/2020 03:50:01 am | $129.74 | Wally World | Other: POS Transaction | Debit |
-| Pending | 08/28/2020 03:36:33 am | $12.08 | Good Buy | Other: POS Transaction | Debit |
+|   STATUS  |          DATE          |  AMOUNT |      VENDOR      |       DESCRIPTION      |  TYPE |
+|:---------:|:----------------------:|:-------:|:----------------:|:----------------------:|:-----:|
+| Completed | 08/28/2020 06:43:12 am |  $8.08  | Quickly Gas Stop | Other: POS Transaction | Debit |
+|  Pending  | 08/28/2020 03:50:01 am | $129.74 |    Wally World   | Other: POS Transaction | Debit |
+|  Pending  | 08/28/2020 03:36:33 am |  $12.08 |     Good Buy     | Other: POS Transaction | Debit |
