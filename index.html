@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transactions</title>
+</head>
+<style>
+body {
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+</style>
+<body>
+    <div id="transactions">
+        <h3>Starting Balance: ${{startingBalance}}</h3>
+        <h3>Ending Balance: ${{endingBalance}}</h3>
+        <h4>Account Number: {{$store.state.Statement.Transactions[0].AccountNumber}}</h4>
+        <table>
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Vendor</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="transaction in $store.state.Statement.Transactions.slice().reverse()">
+                  <td>{{transaction.Billed ? 'Completed' : 'Pending'}}</td>
+                  <td>{{transaction.TransactionDate | formatDate}}</td>
+                  <td>${{transaction.Amount}}</td>
+                  <td>{{transaction.MerchantName}}</td>
+                  <td>{{transaction.Description}}</td>
+                  <td>{{transaction.TransactionTypeId}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://unpkg.com/vuex@3.6.0/dist/vuex.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="./main.js"></script>
+</html>
