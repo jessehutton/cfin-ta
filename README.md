@@ -24,3 +24,16 @@ The data provided could've used some context so I had to make some assumptions b
 | Completed | 08/28/2020 06:43:12 am |  $8.08  | Quickly Gas Stop | Other: POS Transaction | Debit |
 |  Pending  | 08/28/2020 03:50:01 am | $129.74 |    Wally World   | Other: POS Transaction | Debit |
 |  Pending  | 08/28/2020 03:36:33 am |  $12.08 |     Good Buy     | Other: POS Transaction | Debit |
+
+## Things I would've done given more time
+- comments in code to explain functions
+- expandable transactions that initially show date, transaction amount, vendor name and balance after transaction that expands into a detailed view
+- separate list for pending transactions
+- sortable headers of the table by date, type, or amount
+- filtering by account number to display transactions grouped by account number in case of multiple account listings
+- date range filter to display transactions within a date range
+- better data sanitization
+- negative account balance warnings (css cues)
+- responsive design
+
+These are just to name a few things off the top of my head but 
